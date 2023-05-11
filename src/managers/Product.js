@@ -126,46 +126,8 @@ class Product {
     }
 }
 
-let manager = new Product('/src/data/products.json');
+let manager = new Product('./data/products.json');
 
-
-// async function manager() {
-//         console.log("*** Se creará una instancia de la clase “ProductManager”")
-//         let instancia = new ProductManager('./objetos.json');
-//         console.log(" ")
-
-//         console.log("*** Se llamará “getProducts” recién creada la instancia, debe devolver un arreglo vacío []")
-//         await instancia.getProducts()
-//         console.log(" ")
-
-//         console.log("*** Se llamará al método “addProduct” con los campos: title: “producto prueba” description:”Este es un producto prueba” price:200, thumbnail:”Sin imagen” code:”abc123”, stock:25")
-//         await instancia.addProduct("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25)
-//         console.log("El objeto debe agregarse satisfactoriamente con un id generado automáticamente SIN REPETIRSE")
-//         console.log(" ")
-
-//         console.log("*** Se llamará el método “getProducts” nuevamente, esta vez debe aparecer el producto recién agregado")
-//         await instancia.getProducts()
-//         console.log(" ")
-
-//         console.log("*** Se llamará al método “getProductById” y se corroborará que devuelva el producto con el id especificado, en caso de no existir, debe arrojar un error.")
-//         await instancia.getProductsById(1)
-//         console.log(" ")
-
-//         await instancia.getProductsById(30)
-//         console.log(" ")
-
-//         console.log("*** Se llamará al método “updateProduct” y se intentará cambiar un campo de algún producto, se evaluará que no se elimine el id y que sí se haya hecho la actualización.")
-//         await instancia.updateProduct(1, {
-//                      price: 970
-//                    })
-//         console.log(" ")
-
-//         console.log("*** Se llamará al método “deleteProduct”, se evaluará que realmente se elimine el producto o que arroje un error en caso de no existir.")
-//         await instancia.deleteProduct(1)
-//         console.log(" ")
-// }
-
-// manager()
 
 export default manager
 
